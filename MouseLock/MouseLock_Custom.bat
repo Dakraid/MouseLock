@@ -1,0 +1,1 @@
+MouseLock -w 2560 -o 0 -t Skyrim
