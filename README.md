@@ -22,5 +22,4 @@ MouseLock requires pywin32.
 >pip install pywin32
 
 Building the exe requires cx_Freeze as well as idna
->pip install cx_Freeze
->pip install idna
+>pip install cx_Freeze idna
