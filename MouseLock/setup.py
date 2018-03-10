@@ -14,7 +14,7 @@ options = {
 setup(
     name = "MouseLock",
     options = options,
-    version = "1.2.1",
+    version = "1.2.2",
     description = 'MouseLock limits your mouse cursor to one area/screen',
     executables = executables
 )
