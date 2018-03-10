@@ -1,6 +1,6 @@
 from ctypes import windll, Structure, c_ulong, byref
 from win32gui import GetWindowText, GetForegroundWindow
-import sys, getopt
+import sys, getopt, time
 
 def main(argv):
     x = True
@@ -47,6 +47,7 @@ def main(argv):
                 windll.user32.SetCursorPos(screenOffset,pt.y)
         else:
             print("Lock is disengaged           ", end='\r')
+        time.sleep(0.1)
                 
 if __name__ == "__main__":
    main(sys.argv[1:])
