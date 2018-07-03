@@ -1,1 +1,1 @@
-MouseLock -w 2560 -o 0 -t Skyrim
+MouseLock -w 2560 -o 1920 -b 0 -t Skyrim
