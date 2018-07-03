@@ -40,11 +40,11 @@ def main(argv):
     print('Screen Width:', screenLimit, 'px, Screen Offset:', screenOffset, 'px')
     print('Locking on:', game)
     
+    pt = POINT()
     while(x):
         fg_window_name = GetWindowText(GetForegroundWindow()).lower()
         if (game.lower() == fg_window_name):
             print("Lock is engaged              ", end='\r')
-            pt = POINT()
             windll.user32.GetCursorPos(byref(pt))
             if(pt.x > (screenLimit + screenOffset)):
                 windll.user32.SetCursorPos(totalLimit,pt.y)
