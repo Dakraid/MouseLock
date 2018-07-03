@@ -18,8 +18,7 @@ To set the parameters you simply edit the MouseLock_Custom.bat and it should loo
 >MouseLock -w 2560 -o 1920
     
 ## Dependencies:
-MouseLock requires pywin32.
->pip install pywin32
+MouseLock requires "win32gui","time","getopt", and "sys".
 
 Building the exe requires cx_Freeze as well as idna
 >pip install cx_Freeze idna
