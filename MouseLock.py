@@ -1,8 +1,12 @@
+import ctypes
 from ctypes import windll, Structure, c_ulong, byref
 from win32gui import GetWindowText, GetForegroundWindow
+import win32api
 import sys, getopt, time
 
 def main(argv):
+    windll.user32.SetProcessDPIAware()
+    
     x = True
     game = "Skyrim"
     screenLimit = 1920
@@ -30,6 +34,7 @@ def main(argv):
             game = arg
             
     totalLimit = screenLimit + screenOffset - limitOffset
+    
     
     print('MouseLock Active')    
     print('Screen Width:', screenLimit, 'px, Screen Offset:', screenOffset, 'px')
